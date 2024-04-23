@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss"
 
+
 const config = {
   darkMode: ["class"],
   content: [
@@ -17,6 +18,12 @@ const config = {
         "2xl": "1400px",
       },
     },
+    fontFamily: {
+      funfont: ['Jura', 'sans-serif'],
+      sansfont: ['Montserrat', 'sans-serif'],
+      seriffont: ['Merriweather', 'serif'],
+    },
+
     extend: {
       colors: {
         border: "hsl(var(--border))",
@@ -24,6 +31,7 @@ const config = {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -36,6 +44,16 @@ const config = {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
         },
+
+      txparent: 'transparent',
+      black: '#000',
+      white: '#fff',
+      dkgray: '#2D3142',
+      ltgray: '#BFC0C0',
+      offwhite: '#E6E4DC',
+      highlight: '#EF8354',
+      cool: '#4F5D75',
+
         muted: {
           DEFAULT: "hsl(var(--muted))",
           foreground: "hsl(var(--muted-foreground))",
