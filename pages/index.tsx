@@ -50,10 +50,10 @@ export default function Page() {
 
           <Tabs defaultValue="current" className="w-5/6  bg-white py-10 opacity-95  rounded-lg shadow-md">
             <TabsList>
-              <TabsTrigger value="current" className="bg-offwhite hover:bg-highlight p-2 pt-3" >Current</TabsTrigger>
-              <TabsTrigger value="upcoming" className="bg-offwhite hover:bg-highlight p-2 pt-3">Upcoming</TabsTrigger>
-              <TabsTrigger value="leaderboard" className="bg-offwhite hover:bg-highlight p-2 pt-3">Leaderboard</TabsTrigger>
-              <TabsTrigger value="community" className="bg-offwhite hover:bg-highlight p-2 pt-3">Community</TabsTrigger>
+              <TabsTrigger value="current"  >Current</TabsTrigger>
+              <TabsTrigger value="upcoming">Upcoming</TabsTrigger>
+              <TabsTrigger value="leaderboard" >Leaderboard</TabsTrigger>
+              <TabsTrigger value="community">Community</TabsTrigger>
             </TabsList>
             <TabsContent value="current">
               <p className="font-sansfont leading-8 text-m mt-10 mb-20">
