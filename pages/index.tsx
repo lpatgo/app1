@@ -8,6 +8,7 @@ import { Inter } from "next/font/google";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"; // Import Tabs components
+import { MapViewer } from '@/components/MapViewer';
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -22,6 +23,8 @@ export default function Page() {
     setActiveTab(index);
   };
 
+  
+
 
 
   return (
@@ -33,7 +36,7 @@ export default function Page() {
         <header className="w-full py-5 px-10 flex items-center justify-between bg-white shadow-lg fixed top-0 z-10">
           <div className="flex items-center space-x-8">
             <Image src="/atlas-200px-warm.png" alt="Logo" width={50} height={50} />
-            <h2 className="text-2xl float-left leading-normal tracking-[0.6px] text-dkgray font-funfont">Survivor Atlas</h2>
+            <h2 className="text-2xl float-left leading-normal tracking-[0.6px] text-dkgray font-funfont">Survivor Salta</h2>
           </div>
           <nav className=" absolute top-0 right-0 mt-0 mb-8 mr-3 h-full">
             <ul className="flex space-x-4">
@@ -50,19 +53,13 @@ export default function Page() {
 
           <Tabs defaultValue="current" className="w-5/6  bg-white py-10 opacity-95  rounded-lg shadow-md">
             <TabsList>
-              <TabsTrigger value="current"  >Current</TabsTrigger>
+              <TabsTrigger value="current"  >map</TabsTrigger>
               <TabsTrigger value="upcoming">Upcoming</TabsTrigger>
               <TabsTrigger value="leaderboard" >Leaderboard</TabsTrigger>
               <TabsTrigger value="community">Community</TabsTrigger>
             </TabsList>
             <TabsContent value="current">
-              <p className="font-sansfont leading-8 text-m mt-10 mb-20">
-                How does it feel<br />
-                To treat me like you do?<br />
-                When you've laid your hands upon me<br />
-                And told me who you are<br/><br/>
-                <Button>Previous</Button>
-              </p>
+             <MapViewer  />
             </TabsContent>
             <TabsContent value="upcoming">
               <p className="font-sansfont leading-8 text-m mt-10 mb-20">
