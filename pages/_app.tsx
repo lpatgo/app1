@@ -1,10 +1,25 @@
 
-import "@/styles/globals.css";
+import '../styles/globals.css';
 import Head from 'next/head';
+
 import type { AppProps } from "next/app";
+import { Thasadith } from "next/font/google"
 
 
+/*
+const sans = Thasadith ({
+  subsets: ["latin"],
+  weight: '400',
+});
 
+export default function App({ Component, pageProps }: AppProps) {
+  return (
+    <main className={Thasadith.className}>
+    <Component {...pageProps} />;
+      </main>
+  );
+}
+*/
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -22,11 +37,6 @@ function MyApp({ Component, pageProps }: AppProps) {
 }
 
 
-
-
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
-}
 
 
 
