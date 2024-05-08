@@ -4,17 +4,18 @@ import { cn } from "@/lib/utils"
 import { cva, type VariantProps } from "class-variance-authority";
 
 const mapCellVariants = cva(
-  "p-0 text-xs align-middle", // Base styles
+  "py-2 px-3 text-s align-middle", // Base styles
   {
     variants: {
       variant: {
-        default: "p-0 m-0 bg-lime-200",
+        default: "p-0 m-0 bg-lime-200 ",
         grey: "bg-gray-200",
         mapog: "bg-slate-200",
         label: "font-bold", // Adjust based on how you want numbered cells to look
+        allcaps: "uppercase"
         // Add other variants as needed
       },
-   
+
     },
     defaultVariants: {
       variant: "grey", // Default variant if none is specified
@@ -29,7 +30,7 @@ const Map = React.forwardRef<
   <div className="relative w-full overflow-auto">
     <table
       ref={ref}
-      className={cn("w-full caption-bottom text-sm", className)}
+      className={cn("w-full caption-bottom text-sm border-collapse overflow-hidden shadow-custom min-w-360 ", className)}
       {...props}
     />
   </div>
@@ -44,17 +45,19 @@ const MapHeader = React.forwardRef<
 ))
 MapHeader.displayName = "MapHeader"
 
+
 const MapBody = React.forwardRef<
   HTMLTableSectionElement,
   React.HTMLAttributes<HTMLTableSectionElement>
 >(({ className, ...props }, ref) => (
   <tbody
     ref={ref}
-    className={cn("[&_tr:last-child]:border-0", className)}
+    className={cn("[&_tr:last-child]:border-0 ", className)}
     {...props}
   />
 ))
 MapBody.displayName = "MapBody"
+
 
 const MapFooter = React.forwardRef<
   HTMLTableSectionElement,
@@ -63,13 +66,14 @@ const MapFooter = React.forwardRef<
   <tfoot
     ref={ref}
     className={cn(
-      "border-t bg-muted/50 font-medium [&>tr]:last:border-b-0",
+      "border-t  font-medium [&>tr]:last:border-b-0 overflow-scroll",
       className
     )}
     {...props}
   />
 ))
 MapFooter.displayName = "MapFooter"
+
 
 const MapRow = React.forwardRef<
   HTMLTableRowElement,
@@ -86,6 +90,7 @@ const MapRow = React.forwardRef<
 ))
 MapRow.displayName = "MapRow"
 
+
 const MapHead = React.forwardRef<
   HTMLTableCellElement,
   React.ThHTMLAttributes<HTMLTableCellElement>
@@ -93,7 +98,7 @@ const MapHead = React.forwardRef<
   <th
     ref={ref}
     className={cn(
-      "px-1 text-xs text-left align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0",
+      "top-0 z-3 px-1 text-s align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0 sticky",
       className
     )}
     {...props}
@@ -101,13 +106,14 @@ const MapHead = React.forwardRef<
 ))
 MapHead.displayName = "MapHead"
 
+
 const MapCell = React.forwardRef<
   HTMLTableCellElement,
   React.TdHTMLAttributes<HTMLTableCellElement> & VariantProps<typeof mapCellVariants>
 >(({ className, variant, ...props }, ref) => (
   <td
     ref={ref}
-    className={cn(mapCellVariants({ variant }), className)}
+    className={cn(mapCellVariants({ variant:"allcaps" }), className)}
     {...props}
   />
 ));

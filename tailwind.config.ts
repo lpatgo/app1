@@ -10,6 +10,7 @@ const config = {
     './src/**/*.{ts,tsx}',
 	],
   prefix: "",
+
   theme: {
     container: {
       center: true,
@@ -18,11 +19,13 @@ const config = {
         "2xl": "1400px",
       },
     },
+
     fontFamily: {
-      funfont: ['Jura', 'sans-serif'],
-      sansfont: ['Montserrat', 'sans-serif'],
-      seriffont: ['Merriweather', 'serif'],
+      fun: ['parity-sans', 'sans-serif'],
+      sans: ['Thasadith', 'sans-serif'],
+      serif: ['Georgia', 'serif'],
     },
+
 
     extend: {
       colors: {
@@ -54,6 +57,8 @@ const config = {
       highlight: '#EF8354',
       cool: '#4F5D75',
 
+
+
         muted: {
           DEFAULT: "hsl(var(--muted))",
           foreground: "hsl(var(--muted-foreground))",
@@ -71,10 +76,24 @@ const config = {
           foreground: "hsl(var(--card-foreground))",
         },
       },
+
+      boxShadow: {
+        'custom': '0 0 20px rgba(0, 0, 0, 0.1)',
+      },
+
+      minWidth: {
+            '360': '360px',
+          },
+
+      zIndex: {
+            '2': '2',  // If you specifically need z-index of 2
+            '3': '3',  // If you specifically need z-index of 3
+          },
+
       borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
+        lg: "28px",
+        md: "calc(var(--radius) - 3px)",
+        sm: "calc(var(--radius) - 6px)",
       },
       keyframes: {
         "accordion-down": {

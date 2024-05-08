@@ -4,7 +4,9 @@
 
 
 
-@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+.body {
+  font-family: 'Thasadith', sans-serif;
+}
 
 
   @layer base {
@@ -79,3 +81,69 @@
       @apply bg-background text-foreground;
     }
   }
+
+
+tr > :first-child {
+  position:sticky;
+  left:0;
+  z-index: 2;
+  background: #61748e;
+  position: -webkit-sticky; /* For Safari support */
+}
+
+td {min-width: 44px;}
+
+
+table {
+	width: 800px;
+	border-collapse: collapse;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+/*
+th {
+	text-align: left;
+}
+*/
+thead {
+  tr {
+    top: 0; position: sticky;
+  }
+}
+
+thead {
+	th {
+		background-color: #999;
+	}
+}
+
+td:hover {
+    background-color: #768ab9;
+
+    transition-duration: 0.7s;
+}
+
+/*
+tbody {
+	tr {
+		&:hover {
+			background-color: rgba(255,255,255,0.3);
+		}
+	}
+	td {
+		position: relative;
+		&:hover {
+			&:before {
+				content: "";
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: -9999px;
+				bottom: -9999px;
+				background-color: rgba(255,255,255,0.3);
+				z-index: -1;
+			}
+		}
+	}
+}  */
