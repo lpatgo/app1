@@ -21,6 +21,14 @@ import {
 
 import BackgroundImageSwap from '@/components/ui/BackgroundImageSwap';
 
+import { Josefin_Slab } from 'next/font/google';
+import { Rubik_Glitch_Pop } from 'next/font/google';
+const josefin = Josefin_Slab({subsets: ["latin"]});
+const glitchpopfont = Rubik_Glitch_Pop({
+  subsets: ["latin"],
+  weight: '400'
+});
+
 
 
 /* const inter = Inter({ subsets: ["latin"] }); */
@@ -49,7 +57,11 @@ export default function Page() {
         <header className="w-full py-4 px-8 flex items-center justify-between bg-white shadow-lg fixed top-0 z-10">
           <div className="flex items-center space-x-8">
             <Image src="/man-atlas-turn-1.gif" alt="Logo" width={60} height={55} />
-            <div className="text-2xl float-left leading-normal tracking-[0.6px] text-dkgray">Salt Days</div>
+            <div className="text-2xl float-left leading-normal tracking-[0.6px] text-dkgray">
+              <span className={glitchpopfont.className}>
+              Salt Days
+              </span>
+              </div>
           </div>
           <nav className=" absolute top-0 right-0 mt-0 mb-8 mr-3 h-full">
             <ul className="flex space-x-4">
@@ -71,7 +83,7 @@ export default function Page() {
 
 
           <Tabs defaultValue="current" className="relative  w-full h-full mt-0 pb-10 opacity-95 ">
-          <TabsList className=" ">
+          <TabsList className={josefin.className}>
               <TabsTrigger value="current" className=" " >Map</TabsTrigger>
               <TabsTrigger value="upcoming" className=" ">Upcoming</TabsTrigger>
               <TabsTrigger value="leaderboard" className=" " >Leaderboard</TabsTrigger>
