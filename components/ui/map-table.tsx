@@ -113,7 +113,7 @@ const MapCell = React.forwardRef<
 >(({ className, variant, ...props }, ref) => (
   <td
     ref={ref}
-    className={cn(mapCellVariants({ variant:"allcaps" }), className)}
+    className={cn(mapCellVariants({ variant:"grey" }), className="uppercase")}
     {...props}
   />
 ));

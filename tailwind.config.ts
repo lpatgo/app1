@@ -22,8 +22,8 @@ const config = {
 
     fontFamily: {
       fun: ['parity-sans', 'sans-serif'],
-      sans: ['Thasadith', 'sans-serif'],
-      serif: ['Georgia', 'serif'],
+      sans: ['Red_Hat_Display', 'sans-serif'],
+      serif: ['Josefin Slab', 'serif'],
     },
 
 

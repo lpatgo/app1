@@ -5,11 +5,13 @@
 @tailwind utilities;
 
 
-
-.body {
-  font-family: 'Thasadith', sans-serif;
+/*
+body {
+  font-family: "Red Hat Display", sans-serif;
 }
+*/
 
+h2 {font-family: 'parity-sans', 'sans-serif';}
 
   @layer base {
     :root {
@@ -100,7 +102,7 @@ table {
 	width: 800px;
 	border-collapse: collapse;
 	overflow: hidden;
-	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+	box-shadow: 0 0 20px rgba(0,0,0,0.2);
 }
 
 /*
@@ -121,7 +123,7 @@ thead {
 }
 
 td:hover {
-    background-color: #768ab9;
+    background-color: #9ddd79;
 
     transition-duration: 0.7s;
 }
