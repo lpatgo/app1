@@ -60,18 +60,24 @@ export default function Page() {
           </nav>
         </header>
 
-        <div className="clear-both flex justify-center w-5/6 h-3/4 mx-auto mt-0 mb-0 pt-0 px-0 pb-0  shadow-sm bg-gray-100 bg-opacity-75 overflow-auto border-4 border-offwhite">
+        <div className="clear-both  justify-center  w-5/6 h-3/4 mx-auto mt-0 mb-0 pt-0 px-0 pb-0  shadow-sm bg-gray-100 bg-opacity-75 overflow-auto border-4 border-offwhite">
 
           {/*  Wrap around all of table ^^
           vv tabs content starting with header of tabs */}
 
-          <Tabs defaultValue="current" className="w-full h-full mt-0 pb-10 opacity-95 ">
-            <TabsList>
-              <TabsTrigger value="current" className="" >Map</TabsTrigger>
-              <TabsTrigger value="upcoming" className="">Upcoming</TabsTrigger>
+           <div className="sticky top-0 z-20 w-full h-6 bg-pink-400">sticky top line
+
+           </div>
+
+
+          <Tabs defaultValue="current" className="relative  w-full h-full mt-0 pb-10 opacity-95 ">
+          <TabsList className=" ">
+              <TabsTrigger value="current" className=" " >Map</TabsTrigger>
+              <TabsTrigger value="upcoming" className=" ">Upcoming</TabsTrigger>
               <TabsTrigger value="leaderboard" className=" " >Leaderboard</TabsTrigger>
               <TabsTrigger value="community" className=" ">Community</TabsTrigger>
             </TabsList>
+
             <TabsContent value="current">
              <MapViewer  />
 
