@@ -75,11 +75,9 @@ export default function Page() {
         <div className="clear-both  justify-center  w-5/6 h-3/4 mx-auto mt-0 mb-0 pt-0 px-0 pb-0  shadow-sm bg-gray-100 bg-opacity-75 overflow-auto border-4 border-offwhite">
 
           {/*  Wrap around all of table ^^
-          vv tabs content starting with header of tabs */}
+   vv tabs content starting with sticky top then header of tabs then main table nested in tabs function */}
 
-           <div className="sticky top-0 z-20 w-full h-6 bg-pink-400">sticky top line
-
-           </div>
+           <div className="sticky top-0 z-20 w-full h-6 bg-pink-400">sticky top line should be tabs    </div>
 
 
           <Tabs defaultValue="current" className="relative  w-full h-full mt-0 pb-10 opacity-95 ">
@@ -150,8 +148,7 @@ export default function Page() {
   </CardContent>
 </Card>
 
-  <Button className="float-left mx-10 mt-8 px-7 py-9 bg-offwhite text-black rounded-lg uppercase   hover:bg-cool hover:text-white ease-in-out  ">Wild Area</Button>
-
+  <Button variant={"default"} size={"lg"} className="float-left mx-10 mt-8">Wild area</Button>
 
 </div>
 
