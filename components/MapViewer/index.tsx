@@ -31,10 +31,10 @@ export const MapViewer: React.FC<MapViewerProps<any, any>> = ({ }) => {
                     {mapData.map((row) => {
                         return (
                             <MapRow key={row.label}>
-                                <MapCell>{row.label}</MapCell>
+                                <MapCell variant={'label'}>{row.label}</MapCell>
                                 {columns.slice(1).map((column) => {
                                     return (
-                                        <MapCell key={column}>
+                                        <MapCell key={column} variant={'mapog'} >
                                             <InnerCell row={row} column={column} />
                                         </MapCell>
                                     )

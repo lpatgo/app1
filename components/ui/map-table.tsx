@@ -4,15 +4,17 @@ import { cn } from "@/lib/utils"
 import { cva, type VariantProps } from "class-variance-authority";
 
 const mapCellVariants = cva(
-  "py-2 px-3 text-s align-middle", // Base styles
+  "py-2 px-3 text-s align-middle hover:bg-green-500 transition-colors duration-200 min-w-10",
   {
     variants: {
       variant: {
         default: "p-0 m-0 bg-lime-200 ",
         grey: "bg-gray-200",
         mapog: "bg-slate-200",
-        label: "font-bold", // Adjust based on how you want numbered cells to look
-        allcaps: "uppercase"
+        label: "bg-blue-300",
+
+        allcaps: "uppercase",
+        og: "bg-slate-200",
         // Add other variants as needed
       },
 
@@ -30,7 +32,7 @@ const Map = React.forwardRef<
   <div className="relative w-full overflow-auto">
     <table
       ref={ref}
-      className={cn("w-full caption-bottom text-sm border-collapse overflow-hidden shadow-custom min-w-360 ", className)}
+      className={cn("w-full caption-bottom text-sm border-collapse overflow-hidden min-w-360 shadow-xl ", className)}
       {...props}
     />
   </div>
@@ -98,7 +100,7 @@ const MapHead = React.forwardRef<
   <th
     ref={ref}
     className={cn(
-      "top-0 z-3 px-1 text-s align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0 sticky",
+      "sticky top-0 z-10 px-1 text-sm align-middle font-medium bg-gray-300 [&:has([role=checkbox])]:pr-0",
       className
     )}
     {...props}
@@ -113,7 +115,7 @@ const MapCell = React.forwardRef<
 >(({ className, variant, ...props }, ref) => (
   <td
     ref={ref}
-    className={cn(mapCellVariants({ variant:"grey" }), className="uppercase")}
+    className={cn(mapCellVariants({ variant }), className="uppercase")}
     {...props}
   />
 ));
