@@ -13,8 +13,7 @@ const mapCellVariants = cva(
         mapog: "bg-slate-200",
         label: "bg-blue-300",
 
-        allcaps: "uppercase",
-        og: "bg-slate-200",
+        allcaps: "uppercase"
         // Add other variants as needed
       },
 
