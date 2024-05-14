@@ -13,7 +13,7 @@ const BackgroundImageSwap = () => {
   }, [currentImage]); // Run effect whenever currentImage changes
 
   return (
-    <div className="bg-image bg-contain bg-left bg-no-repeat h-screen absolute inset-0 z-[-1] transition-opacity duration-2000 ease-in-out" style={{ backgroundImage: `url(${images[currentImage]})` }}>
+    <div className="bg-image bg-contain bg-left bg-no-repeat bg-opacity-75 h-screen absolute inset-0 z-[-1] transition-opacity duration-2000 ease-in-out" style={{ backgroundImage: `url(${images[currentImage]})` }}>
 
     </div>
   );

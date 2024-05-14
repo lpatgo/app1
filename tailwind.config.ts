@@ -54,7 +54,7 @@ const config = {
       dkgray: '#2D3142',
       ltgray: '#BFC0C0',
       offwhite: '#E6E4DC',
-      highlight: '#EF8354',
+      highlight: '#EE6A4D',
       cool: '#4F5D75',
 
 

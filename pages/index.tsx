@@ -56,7 +56,7 @@ export default function Page() {
         {/* Fixed Header */}
         <header className="w-full py-4 px-8 flex items-center justify-between bg-white shadow-lg fixed top-0 z-10">
           <div className="flex items-center space-x-8">
-            <Image src="/man-atlas-turn-1.gif" alt="Logo" width={60} height={55} />
+            <Image src="/pusher-atlas-globe-colors1.gif" alt="Logo" width={75} height={65} />
             <div className="text-2xl float-left leading-normal tracking-[0.6px] text-dkgray">
               <span className={glitchpopfont.className}>
               Salt Days
@@ -77,7 +77,7 @@ export default function Page() {
           {/*  Wrap around all of table ^^
    vv tabs content starting with sticky top then header of tabs then main table nested in tabs function */}
 
-           <div className="sticky top-0 z-20 w-full h-6 bg-pink-400">sticky top line should be tabs    </div>
+           <div className="sticky top-0 z-20 w-full h-6 bg-highlight">sticky top line should be header info   </div>
 
 
           <Tabs defaultValue="current" className="relative  w-full h-full mt-0 pb-10 opacity-95 ">
