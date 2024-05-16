@@ -4,13 +4,14 @@ import { cn } from "@/lib/utils"
 import { cva, type VariantProps } from "class-variance-authority";
 
 const mapCellVariants = cva(
-  "py-2 px-3 text-s align-middle hover:bg-green-500 transition-colors duration-200 min-w-10",
+  "py-2 px-3 text-s align-middle hover:bg-green-500 transition-colors duration-700 min-w-10",
   {
     variants: {
       variant: {
         default: "p-0 m-0 bg-lime-200 ",
         grey: "bg-gray-200",
         mapog: "bg-slate-200",
+        
         label: "bg-blue-300",
 
         allcaps: "uppercase"
