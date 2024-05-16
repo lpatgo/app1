@@ -18,8 +18,8 @@ function MainList() {
             <div>
                 <Tabs>
                     <TabsList>
-                        <TabsTrigger value="players">by playres</TabsTrigger>
-                        <TabsTrigger value="entries">by teams</TabsTrigger>
+                        <TabsTrigger value="players">by players</TabsTrigger>
+                        <TabsTrigger value="entries">by entry</TabsTrigger>
                     </TabsList>
                     <TabsContent value="players">
                         <ByPlayer />
