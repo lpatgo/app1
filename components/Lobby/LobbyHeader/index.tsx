@@ -1,22 +1,31 @@
 import React from "react";
+import NavBar from "@/components/Lobby/LobbyHeader/NavBar";
 import { Button } from "@/components/ui/button";
+
 export default function LobbyHeader(){
     return (
-        <div className="bg-white p-4 rounded-lg shadow-md">
-      <h2 className="text-lg font-semibold">CONTEST SNAPSHOT CIRCA SURVIVOR</h2>
+      <div className="w-screen mt-20 mb-2 overflow-hidden">
+      <NavBar />
+
+        <div className="bg-white p-4 w-screen shadow-md">
+        <div className="mt-8  text-[19px]">
+        <span className="text-[#293241]">CONTEST SNAPSHOT </span>
+        <span className="text-[rgba(103,116,131,0.80)]">CIRCA SURVIVOR</span>
+      </div>
+
       <div className="flex flex-col py-2">
         <span>8/15 entries</span>
         <span>4/7 players</span>
         <span>$93.75 avg value</span>
       </div>
-      <Button className="bg-[#00B2A9] text-white py-2 px-4 rounded-full inline-flex items-center">
-        CONTEST TOOLS
-        <ChevronRightIcon className="ml-2" />
-      </Button>
-      <div className="pt-4">
+      <Button size="lg" variant="default" className="float-right -mt-7 -mr-10 ">Contest Tools &gt; </Button>
+
+      <div className="pt-4 w-2/3">
         <h3 className="font-semibold">Picks due:</h3>
         <span>00 hrs 00 min</span>
       </div>
+    </div>
+
     </div>
     );
 }

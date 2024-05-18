@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Page() {
     return <div>
-        Layout~~~
+       {/*  Layout~~~   */}
 
         <Lobby />
     </div>;
