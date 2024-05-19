@@ -5,11 +5,12 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center whitespace-nowrap  text-lg font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+  // base tailwind for each button is this line
+  "inline-flex items-center justify-center whitespace-nowrap text-black uppercase hover:bg-[#EE6A4D]  hover:text-white",
   {
     variants: {
       variant: {
-        default: "bg-offwhite text-black uppercase hover:bg-[#EE6A4D] hover:text-white",
+        default: "bg-offwhite text-black hover:bg-accent hover:text-accent-foreground",
         destructive:
           "bg-pink-500 text-destructive-foreground hover:bg-destructive/90",
         outline:
@@ -18,12 +19,15 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        leftround: "rounded-r-none rounded-l-lg uppercase bg-cyan-500/30",
+
       },
       size: {
         default: "h-10 rounded-lg px-4 py-2",
         sm: "h-9 rounded-md px-3 shadow-md",
         lg: 'w-60 h-15 rounded-full px-11 py-6 text-xl shadow-lg bg-[#C7E7E9]',
         icon: "h-10 w-10",
+        lobbyheader: "w-60 h-12 my-1 px-11 py-6 text-xl hover:bg-[#EE6A4D] shadow-lg",
       },
     },
     defaultVariants: {

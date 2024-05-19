@@ -1,25 +1,29 @@
 import React from 'react'
-import { Input } from '@/components/ui/input'
+
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"; // Import Tabs components
 import ByPlayer from './tabs/ByPlayer';
 import ByEntry from './tabs/ByEntry';
 import SearchBox from './SearchBox';
 
 function MainList() {
-    const [searchTerm, setSearchTerm] = React.useState('')
+
 
 
   return (
     <div>
-        <div className="flex flex-col w-full">
+        <div className="flex flex-col mx-3">
             <div>
                <SearchBox />
             </div>
-            <div>
-                <Tabs>
-                    <TabsList>
+            <div> 
+                <Tabs defaultValue='players'> 
+                
+                    <TabsList >
+                        <div className="flex justify-between">
+                            <span className='flex items-center justify-center uppercase text-sm'>view by</span>
                         <TabsTrigger value="players">by players</TabsTrigger>
                         <TabsTrigger value="entries">by entry</TabsTrigger>
+                        </div>
                     </TabsList>
                     <TabsContent value="players">
                         <ByPlayer />
@@ -29,6 +33,8 @@ function MainList() {
                     </TabsContent>
                 </Tabs>
             </div>
+
+
         </div>
 
     </div>
