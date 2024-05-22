@@ -6,10 +6,10 @@ export default function LobbyHeader() {
   return (
     <div className="w-screen mt-20 mb-2 overflow-hidden">
 
-      <div className="bg-white p-4 w-screen shadow-md">
+      <div className="p-4 w-screen shadow-md">
         <div className="mt-8  text-[19px]">
-          <span className="text-[#293241]">CONTEST SNAPSHOT </span>
-          <span className="text-[rgba(103,116,131,0.80)]">CIRCA SURVIVOR</span>
+          <span className="text-primary-foreground">CONTEST SNAPSHOT </span>
+          <span className="text-secondary-foreground">CIRCA SURVIVOR</span>
         </div>
 
         <div className="flex flex-row justify-between items-center">
@@ -22,6 +22,7 @@ export default function LobbyHeader() {
           
           <div className="flex flex-col justify-end">
           <Button variant="leftround" size="lobbyheader" className="-mr-10">contest tools <ChevronRightIcon /></Button>
+          
           <Button variant="leftround" size="lobbyheader" className="-mr-10">button2</Button>
 
           </div>

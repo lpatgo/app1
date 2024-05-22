@@ -23,13 +23,19 @@ function MainList() {
                             <span className='flex items-center justify-center uppercase text-sm'>view by</span>
                         <TabsTrigger value="players">by players</TabsTrigger>
                         <TabsTrigger value="entries">by entry</TabsTrigger>
+                        <TabsTrigger value="ad">ads</TabsTrigger>
                         </div>
                     </TabsList>
                     <TabsContent value="players">
                         <ByPlayer />
+                        {/* players */}
                     </TabsContent>
                     <TabsContent value="entries">
                         <ByEntry />
+                    
+                    </TabsContent>
+                    <TabsContent value="ad">
+                        ads
                     </TabsContent>
                 </Tabs>
             </div>

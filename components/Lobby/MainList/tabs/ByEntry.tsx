@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {Table, TableRow, TableCell} from '@/components/ui/mainlist-table'
+import {Table, TableRow, TableCell, TableBody} from '@/components/ui/mainlist-table'
 
 interface EntryData {
     name: string
@@ -19,7 +19,7 @@ const myEntries: EntryData[] = [
 function ByEntry() {
   return (
     <div>  <Table>
-                    
+                    <TableBody>
     {myEntries.map((entry) => {
         return (
             <TableRow key={entry.id}>
@@ -28,6 +28,7 @@ function ByEntry() {
             </TableRow>
         )
     })}
+    </TableBody>
 </Table></div>
   )
 }

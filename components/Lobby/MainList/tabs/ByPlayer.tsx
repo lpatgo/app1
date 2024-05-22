@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {Table, TableRow, TableCell} from '@/components/ui/mainlist-table'
+import {Table, TableRow, TableCell, TableBody} from '@/components/ui/mainlist-table'
 
 interface PlayerData {
     name: string
@@ -19,6 +19,7 @@ const myPlayers: PlayerData[] = [
 function ByPlayer() {
   return (
     <div>  <Table>
+        <TableBody>
                     
     {myPlayers.map((player) => {
         return (
@@ -28,6 +29,7 @@ function ByPlayer() {
             </TableRow>
         )
     })}
+    </TableBody>
 </Table></div>
   )
 }

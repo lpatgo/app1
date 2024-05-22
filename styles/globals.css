@@ -7,32 +7,31 @@
 
   @layer base {
     :root {
-      --background: 0 0% 100%;
-      --foreground: 222.2 84% 4.9%;
+      --background: 0 0% 98%; /*alabaster*/
+      --foreground: 218 37% 25%;  /*tuna*/
+     
 
-      --card: 0 0% 100%;
-      --card-foreground: 222.2 84% 4.9%;
+      --card: 0 0% 96%;  /*iron*/
+      --card-foreground: 218 37% 25%;  /*tuna*/
 
-      --popover: 0 0% 100%;
-      --popover-foreground: 222.2 84% 4.9%;
+      --popover: 184 6% 96%;  /*ice*/
+      --popover-foreground: 212 21% 51%;  /*sky*/
 
-      --primary: 222.2 47.4% 11.2%;
-      --primary-foreground: 210 40% 98%;
+      --primary: 0 0% 98%;  /*alabaster*/
+      --primary-foreground: 218 37% 25%;   /*tuna*/
 
-      --secondary: 210 40% 96.1%;
-      --secondary-foreground: 222.2 47.4% 11.2%;
+      --secondary: 220 1% 90%; /*iron*/
+      --secondary-foreground: 221 52% 19%; /*tuna*/
 
-      --muted: 210 40% 96.1%;
-      --muted-foreground: 215.4 16.3% 46.9%;
+      --accent: 184 15% 91%; /*ice*/
+      --accent-foreground: 212 21% 51%; /*sky*/
 
-      --accent: 210 40% 96.1%;
-      --accent-foreground: 222.2 47.4% 11.2%;
+      --destructive: 11 68% 93%; /*persimon*/
+      --destructive-foreground: 218 37% 25%; /*tuna*/
 
-      --destructive: 0 84.2% 60.2%;
-      --destructive-foreground: 210 40% 98%;
+      --border: 220 1% 90%; /*iron*/
 
-      --border: 214.3 31.8% 91.4%;
-      --input: 214.3 31.8% 91.4%;
+      --input: 192 2% 95%; /*sky*/
       --ring: 222.2 84% 4.9%;
 
       --radius: 0.5rem;

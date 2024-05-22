@@ -6,11 +6,11 @@ import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
   // base tailwind for each button is this line
-  "inline-flex items-center justify-center whitespace-nowrap text-black uppercase hover:bg-[#EE6A4D]  hover:text-white",
+  "inline-flex items-center justify-center whitespace-nowrap text-black uppercase bg-accent hover:bg-accent-foreground  hover:text-secondary-foreground",
   {
     variants: {
       variant: {
-        default: "bg-offwhite text-black hover:bg-accent hover:text-accent-foreground",
+        default: "bg-primary-background text-primary-foreground",
         destructive:
           "bg-pink-500 text-destructive-foreground hover:bg-destructive/90",
         outline:
@@ -19,7 +19,7 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        leftround: "rounded-r-none rounded-l-lg uppercase bg-cyan-500/30",
+        leftround: "rounded-r-none rounded-l-lg uppercase",
 
       },
       size: {
@@ -27,7 +27,7 @@ const buttonVariants = cva(
         sm: "h-9 rounded-md px-3 shadow-md",
         lg: 'w-60 h-15 rounded-full px-11 py-6 text-xl shadow-lg bg-[#C7E7E9]',
         icon: "h-10 w-10",
-        lobbyheader: "w-60 h-12 my-1 px-11 py-6 text-xl hover:bg-[#EE6A4D] shadow-lg",
+        lobbyheader: "w-60 h-12 my-1 px-11 py-6 text-xl shadow-lg",
       },
     },
     defaultVariants: {
