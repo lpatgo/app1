@@ -4,7 +4,7 @@ import NavBar from "@/components/NavBar";
 
 export default function Page() {
     const [darkMode, setDarkMode] = React.useState(false);
-    const pagetailwind = "bg-background h-screen w-screen overflow-hidden"
+    const pagetailwind = "bg-background h-screen w-screen overflow-hidden text-primary-foreground"
 
     const toggleDarkMode = () => {
         setDarkMode(!darkMode);
