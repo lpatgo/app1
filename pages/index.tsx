@@ -3,10 +3,20 @@ import React from "react";
 import NavBar from "@/components/NavBar";
 
 export default function Page() {
-    return <div>
+    const [darkMode, setDarkMode] = React.useState(false);
+
+    const toggleDarkMode = () => {
+        setDarkMode(!darkMode);
+    }
+
+    
+    return(
+
+     <div className={darkMode ? "dark" : ""}>
        {/*  Layout~~~   */}
-       <NavBar />
+       <NavBar darkModeCallback={toggleDarkMode} />
 
         <Lobby />
-    </div>;
+    </div>
+    )
     }
