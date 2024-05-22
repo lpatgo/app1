@@ -11,7 +11,7 @@ function MainList() {
 
   return (
     <div>
-        <div className="flex flex-col mx-3">
+        <div className="flex flex-col mx-3 bg-background">
             <div>
                <SearchBox />
             </div>

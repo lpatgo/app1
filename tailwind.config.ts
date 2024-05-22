@@ -48,14 +48,6 @@ const config = {
           foreground: "hsl(var(--destructive-foreground))",
         },
 
-      txparent: 'transparent',
-      black: '#000',
-      white: '#fff',
-      dkgray: '#2D3142',
-      ltgray: '#BFC0C0',
-      offwhite: '#E6E4DC',
-      highlight: '#EE6A4D',
-      cool: '#4F5D75',
 
 
 

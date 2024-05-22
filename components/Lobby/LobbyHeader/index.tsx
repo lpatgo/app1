@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 export default function LobbyHeader() {
   return (
-    <div className="w-screen mt-20 mb-2 overflow-hidden">
+    <div className="w-screen mt-20 mb-2 overflow-hidden bg-background">
 
       <div className="p-4 w-screen shadow-md">
         <div className="mt-8  text-[19px]">
