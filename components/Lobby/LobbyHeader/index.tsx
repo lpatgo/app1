@@ -21,9 +21,9 @@ export default function LobbyHeader() {
           </div>
           
           <div className="flex flex-col justify-end">
-          <Button variant="leftround" size="lobbyheader" className="-mr-10">contest tools <ChevronRightIcon /></Button>
+          <Button variant="leftround" size="lobbyheader" className="-mr-3">contest tools </Button>
           
-          <Button variant="leftround" size="lobbyheader" className="-mr-10">button2</Button>
+          <Button variant="leftround" size="lobbyheader" className="-mr-3">button2</Button>
 
           </div>
         </div>
