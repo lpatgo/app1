@@ -20,11 +20,6 @@ const config = {
       },
     },
 
-    fontFamily: {
-      fun: ['parity-sans', 'sans-serif'],
-      sans: ['Red_Hat_Display', 'sans-serif'],
-      serif: ['Josefin Slab', 'serif'],
-    },
 
 
     extend: {

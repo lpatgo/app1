@@ -5,6 +5,7 @@ import ByPlayer from './tabs/ByPlayer';
 import ByEntry from './tabs/ByEntry';
 import SearchBox from './SearchBox';
 import { FilterIcon } from 'lucide-react';
+import { FilterButton } from './FilterButton';
 
 function MainList() {
 
@@ -35,7 +36,7 @@ function MainList() {
 
 
                             <div className='flex items-center justify-end'>
-                                <FilterIcon size={24} />
+                                <FilterButton onComplete={() => { }} />
                             </div>
                         </div>
 
