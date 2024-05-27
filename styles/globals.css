@@ -9,7 +9,7 @@
     :root {
       --background: 0 0% 98%; /*alabaster*/
       --foreground: 218 37% 25%;  /*tuna*/
-     
+
 
       --card: 0 0% 96%;  /*iron*/
       --card-foreground: 218 37% 25%;  /*tuna*/
@@ -40,7 +40,7 @@
     .dark {
       --background: 0 0% 2%; /*alabaster*/
       --foreground: 218 37% 75%;  /*tuna*/
-     
+
 
       --card: 0 0% 4%;  /*iron*/
       --card-foreground: 218 37% 75%;  /*tuna*/
@@ -80,4 +80,10 @@
   }
 
 
+.clip-left-60 {
+  clip-path: polygon(0 0, 100% 0, 50% 100%, 0 100%);
+}
 
+.clip-right-60 {
+  clip-path: polygon(100% 0, 100% 100%, 50% 100%);
+}

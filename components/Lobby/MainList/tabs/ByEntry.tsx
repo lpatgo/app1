@@ -2,6 +2,8 @@ import React from 'react'
 
 import { Table, TableRow, TableCell, TableBody } from '@/components/ui/mainlist-table'
 
+import TeamIcon from '@/components/ui/teamicon';
+
 interface EntryData {
     name: string
     id: string
@@ -18,17 +20,22 @@ const myEntries: EntryData[] = [
 
 function ByEntry() {
     return (
-        <div>  
+        <div>
+
             <Table>
             <TableBody>
                 {myEntries.map((entry) => {
                     return (
-                        <TableRow key={entry.id}>
-                            <TableCell>{entry.name}({entry.id}/9)</TableCell>
-                            <TableCell>{entry.extra}</TableCell>
-                            <TableCell className='flex justify-end'>
-                                dot code here
-
+            <TableRow key={entry.id}>
+                 <TableCell>{entry.name}({entry.id}/99) </TableCell>
+                 <TableCell>{entry.extra}  </TableCell>
+                 <TableCell className='justify-center'>
+                    <td><TeamIcon leftColor="red" rightColor="gold" size={2} /></td>
+                    <td><TeamIcon leftColor="green" rightColor="gray" size={2} /></td>
+                    <td><TeamIcon leftColor="purple" rightColor="yellow" size={2} /></td>
+                    <td><TeamIcon leftColor="orange" rightColor="black" size={2} /></td>
+                    <td><TeamIcon leftColor="green" rightColor="yellow" size={2} /></td>
+                    <td><TeamIcon leftColor="brown" rightColor="orange" size={2} /></td>
                             </TableCell>
                         </TableRow>
                     )
