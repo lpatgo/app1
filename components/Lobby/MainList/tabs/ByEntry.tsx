@@ -32,14 +32,12 @@ function ByEntry() {
                  <TableCell>{entry.name}({entry.id}/99) </TableCell>
                  <TableCell>{entry.extra}  </TableCell>
                  <TableCell className='justify-center break-words whitespace-normal'>
-                    <td><TeamIcon leftColor="red" rightColor="gold" size={2} /></td>
-                    <td><TeamIcon leftColor="green" rightColor="gray" size={2} /></td>
-                    <td><TeamIcon leftColor="purple" rightColor="yellow" size={2} /></td>
-                    <td><TeamIcon leftColor="orange" rightColor="black" size={2} /></td>
-                    <td><TeamIcon leftColor="green" rightColor="yellow" size={2} /></td>
-                    <td><TeamIcon leftColor="brown" rightColor="orange" size={2} /></td>
-                    <td><TeamIcon leftColor="teal" rightColor="orange" size={2} /></td>
-                    <td><TeamIcon leftColor="red" rightColor="black" size={2} /></td>
+                    <div className='flex flex-row items-center'>
+                        <TeamIcon color1='red' color2='blue' size='small' />
+                        <TeamIcon color1='red' color2='blue' size='small' />
+                        <TeamIcon color1='orange' color2='brown' size='small' />
+                    </div>
+
                             </TableCell>
                         </TableRow>
                     )
