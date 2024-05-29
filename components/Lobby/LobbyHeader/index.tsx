@@ -22,7 +22,8 @@ export default function LobbyHeader() {
           </div>
 
           <div className="flex flex-col justify-end">
-          <Button variant="leftround" size="lobbyheader" className="-mr-3"><span>CONTEST TOOLS</span>
+          <Button variant="leftround" size="lobbyheader" className="-mr-3">Tools<ChevronRightIcon className="w-6 h-6" />  
+          
       </Button>
 
           <Button variant="leftround" size="lobbyheader" className="-mr-3"><span>POSTINGS</span>
