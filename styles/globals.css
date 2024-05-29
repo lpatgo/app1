@@ -40,36 +40,35 @@
     }
 
     .dark {
-      --background: 0 0% 98%; /*alabaster*/
-      --foreground: 218 23% 21%;  /*tuna-500*/
-      --transparent: 0 0% 0%; /*    */
-
-      --card: 0 0% 96%;  /*iron-500*/
-      --card-foreground: 218 23% 21%;  /*tuna-500*/
-
-      --popover: 184, 43%, 93%;  /*ice-300*/
-      --popover-foreground: 212, 12%, 46%;  /*palesky-500*/
-
-      --primary: 0 0% 98%;  /*alabaster*/
-      --primary-foreground: 218 23% 21%;   /*tuna-500*/
-
-      --secondary: 220 6% 90%; /*iron-400*/
-      --secondary-foreground: 221, 35%, 14%;  /*tuna-700*/
-
-      --accent: 184, 44%, 85%; /*ice*/
-      --accent-foreground: 212, 12%, 46%; /*palesky-500*/
-
-      --destructive: 11 83% 62%; /*persimmon*/
-      --destructive-foreground: 218 23% 21%;  /*tuna-500*/
-
-      --muted: 212, 18%, 82%; /*slate-300*/
-
-      --border: 220 6% 90%; /*iron-400*/
-
-      --input: 192 2% 95%;
-      --ring: 222 84% 5%;
-
+      --background: 0 0% 2%; /*alabaster*/
+      --foreground: 218 37% 75%;  /*tuna*/
+     
+  
+      --card: 0 0% 4%;  /*iron*/
+      --card-foreground: 218 37% 75%;  /*tuna*/
+  
+      --popover: 184 6% 4%;  /*ice*/
+      --popover-foreground: 212 21% 49%;  /*sky*/
+  
+      --primary: 0 0% 2%;  /*alabaster*/
+      --primary-foreground: 218 37% 75%;   /*tuna*/
+  
+      --secondary: 220 1% 10%; /*iron*/
+      --secondary-foreground: 221 52% 81%; /*tuna*/
+  
+      --accent: 184 15% 9%; /*ice*/
+      --accent-foreground: 212 21% 49%; /*sky*/
+  
+      --destructive: 11 68% 7%; /*persimon*/
+      --destructive-foreground: 218 37% 25%; /*tuna*/
+  
+      --border: 220 1% 10%; /*iron*/
+  
+      --input: 192 2% 5%; /*sky*/
+      --ring: 222.2 84% 95%;
+  
       --radius: 0.5rem;
+      --ring: 212.7 26.8% 83.9%;
     }
   }
 

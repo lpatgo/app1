@@ -2,9 +2,6 @@ import React from "react";
 import NavBar from "@/components/NavBar";
 import { Button } from "@/components/ui/button";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import '@/lib/fontawesome'; // imports the fontawesome configuration
-
 
 export default function LobbyHeader() {
   return (
@@ -26,10 +23,10 @@ export default function LobbyHeader() {
 
           <div className="flex flex-col justify-end">
           <Button variant="leftround" size="lobbyheader" className="-mr-3"><span>CONTEST TOOLS</span>
-      <FontAwesomeIcon icon="caret-right" className="ml-2" /> </Button>
+      </Button>
 
           <Button variant="leftround" size="lobbyheader" className="-mr-3"><span>POSTINGS</span>
-      <FontAwesomeIcon icon="caret-right" className="ml-2" /> </Button>
+     </Button>
 
           </div>
         </div>
