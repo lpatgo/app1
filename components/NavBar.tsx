@@ -6,7 +6,7 @@ interface NavBarProps {
 const NavBar: React.FC<NavBarProps> = ({ darkModeCallback }) => {
     return (
       <div className="navzone fixed w-full top-0 h-20 z-10 border-b shadow-lg flex items-center px-5 bg-background text-foreground-primary">
-        <div className="logo bg-cover bg-no-repeat bg-center h-14 w-16" style={{ backgroundImage: "url('/pusher-atlas-globe-colors1.png')" }}>
+        <div className="logo bg-cover bg-no-repeat bg-center h-14 w-16" style={{ backgroundImage: "url('/pusher-atlas-globe-colors2.png')" }}>
         </div>
         <h1 className="title mt-2 ml-7 text-xl font-semibold uppercase text-left ">Survivor Salta</h1>
         <div>

@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
   // base tailwind for each button is this line
-  "inline-flex items-center justify-center whitespace-nowrap uppercase bg-accent text-primary-foreground hover:bg-accent-foreground  hover:text-secondary-foreground",
+  "inline-flex items-center justify-center whitespace-nowrap uppercase bg-accent text-primary-foreground hover:bg-accent-foreground  hover:text-primary ease-in-out",
   {
     variants: {
       variant: {

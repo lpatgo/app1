@@ -7,7 +7,7 @@ export default function Lobby(){
         <div>
            {/* removed the word Lobby here  */}
 
-            <div className="flex flex-col w-full">
+            <div className="flex flex-col w-full bg-dotspattern">
                 <LobbyHeader />
                 <MainList />
 

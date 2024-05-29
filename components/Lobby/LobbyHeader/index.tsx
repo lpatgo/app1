@@ -2,14 +2,18 @@ import React from "react";
 import NavBar from "@/components/NavBar";
 import { Button } from "@/components/ui/button";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import '@/lib/fontawesome'; // imports the fontawesome configuration
+
+
 export default function LobbyHeader() {
   return (
-    <div className="w-screen mt-20 mb-2 overflow-hidden bg-background">
+    <div className="w-screen mt-20 mb-2 overflow-hidden bg-transparent">
 
-      <div className="p-4 w-screen shadow-md">
-        <div className="mt-8  text-[19px]">
-          <span className="text-primary-foreground">CONTEST SNAPSHOT </span>
-          <span className="text-secondary-foreground">CIRCA SURVIVOR</span>
+      <div className="p-6 w-screen shadow-md">
+        <div className="mt-8  text-[21px]">
+          <span className="text-secondary-foreground">CONTEST SNAPSHOT </span>
+          <span className="text-popover-foreground">CIRCA SURVIVOR </span>
         </div>
 
         <div className="flex flex-row justify-between items-center">
@@ -19,18 +23,20 @@ export default function LobbyHeader() {
             <span>4/7 players</span>
             <span>$93.75 avg value</span>
           </div>
-          
+
           <div className="flex flex-col justify-end">
-          <Button variant="leftround" size="lobbyheader" className="-mr-3">contest tools </Button>
-          
-          <Button variant="leftround" size="lobbyheader" className="-mr-3">button2</Button>
+          <Button variant="leftround" size="lobbyheader" className="-mr-3"><span>CONTEST TOOLS</span>
+      <FontAwesomeIcon icon="caret-right" className="ml-2" /> </Button>
+
+          <Button variant="leftround" size="lobbyheader" className="-mr-3"><span>POSTINGS</span>
+      <FontAwesomeIcon icon="caret-right" className="ml-2" /> </Button>
 
           </div>
         </div>
 
         <div className="pt-4 w-2/3">
-          <h3 className="font-semibold">Picks due: 00 hrs 00 min</h3>
-        
+          <h3 className="font-semibold text-destructive">Picks due: 00 hrs 00 min</h3>
+
         </div>
       </div>
 
