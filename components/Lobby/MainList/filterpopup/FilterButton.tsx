@@ -1,11 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogTrigger, DialogContent, DialogFooter, DialogClose, DialogHeader } from '@/components/ui/dialog';
-import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
 
 import { Label } from '@/components/ui/label';
+import FilterPanel from './filterpanel';
 
-import { Checkbox } from '@/components/ui/checkbox';
 interface FilterButtonProps {
     onComplete: (config: any) => void;
 }
@@ -66,16 +65,15 @@ export const FilterButton: React.FC<FilterButtonProps> = ({ onComplete }) => {
             </DialogTrigger>
             <DialogContent>
                 <DialogHeader>Choose criteria </DialogHeader>
-           sadfkhsdkjf hvbodfy stuff
-
+                <FilterPanel />
 
 
                 <DialogFooter>
-                    {/* <Button onClick={() => done()}>Filter</Button>
-                    <Button variant={'destructive'} onClick={() => clear()}>Clear</Button> */}
+                    <Button onClick={() => done()}>Ok</Button>
                     <Button onClick={() => setDialogOpen(false)}>Cancel</Button>
                 </DialogFooter>
             </DialogContent>
         </Dialog>
     );
 };
+

@@ -5,7 +5,7 @@ import ByPlayer from './tabs/ByPlayer';
 import ByEntry from './tabs/ByEntry';
 import SearchBox from './SearchBox';
 import { FilterIcon } from 'lucide-react';
-import { FilterButton } from './FilterButton';
+import { FilterButton } from './filterpopup/FilterButton';
 
 function MainList() {
 
