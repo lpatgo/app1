@@ -33,8 +33,8 @@ function ByEntry() {
                  <TableCell>{entry.extra}  </TableCell>
                  <TableCell className='justify-center break-words whitespace-normal'>
                     <div className='flex flex-row items-center'>
-                        <TeamIcon color1='red' color2='blue' size='small' />
-                        <TeamIcon color1='red' color2='blue' size='small' />
+                        <TeamIcon color1='red' color2='blue' size='small' textMode={true} text="ATL" />
+                        <TeamIcon color1='red' color2='blue' size='large' />
                         <TeamIcon color1='orange' color2='brown' size='small' />
                     </div>
 
