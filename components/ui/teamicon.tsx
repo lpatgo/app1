@@ -6,15 +6,41 @@ interface TeamIconProps {
     color2: string | null,
     textMode?: boolean,
     text?: string,
-    size: "small" | "large"
+    size: "small" | "large" | "medium"
 }
 
 const TeamIcon: React.FC<TeamIconProps> = ({ color1, color2, textMode, text, size }) => {
     const realColor2 = color2 || color1;
-    const sizeMultiplier = size === "large" ? 2 : 1;
+    const sizeMultiplier = size === "large" ? 2 : size === "medium" ? 1.5 : 1;
 
     //color 1 is in hex
-    const textButtonStyle: React.CSSProperties = {
+    const textButtonStyleSmall: React.CSSProperties = {
+        backgroundColor: color1, // Assume 'color1' is defined elsewhere in your code
+        borderRadius: '1.5rem', // Tailwind's 'rounded-3xl'
+        width: '1.5rem',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: '0.0em',
+        margin: '0.08em',
+        color: 'white', // Tailwind's 'text-white'
+        fontSize: '.7rem' // Tailwind's 'font-2xl'
+    };
+
+    const textButtonStyleMedium: React.CSSProperties = {
+        backgroundColor: color1, // Assume 'color1' is defined elsewhere in your code
+        borderRadius: '1.5rem', // Tailwind's 'rounded-3xl'
+        width: '2.5rem',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: '0.0em',
+        margin: '0.1em',
+        color: 'white', // Tailwind's 'text-white'
+        fontSize: '.7rem' // Tailwind's 'font-2xl'
+    };
+
+    const textButtonStyleLarge: React.CSSProperties = {
         backgroundColor: color1, // Assume 'color1' is defined elsewhere in your code
         borderRadius: '1.5rem', // Tailwind's 'rounded-3xl'
         width: '4rem', // Tailwind's 'w-16'
@@ -25,7 +51,7 @@ const TeamIcon: React.FC<TeamIconProps> = ({ color1, color2, textMode, text, siz
         color: 'white', // Tailwind's 'text-white'
         fontSize: '1.1rem' // Tailwind's 'font-2xl'
     };
-    
+
 
 
     const leftStyle: React.CSSProperties = {
@@ -43,11 +69,31 @@ const TeamIcon: React.FC<TeamIconProps> = ({ color1, color2, textMode, text, siz
     };
 
     if (textMode) {
-        return (
-            <div style={textButtonStyle}>
-                <span>{text}</span>
-            </div>
-        );
+        if (size === "small") {
+            return (
+                <div style={textButtonStyleSmall}>
+                    <span>{text?.slice(0,1)}</span>
+                </div>
+            );
+        }
+        else if (size === "medium") {
+            return (
+                <div style={textButtonStyleMedium}>
+                    <span>{text}</span>
+                </div>
+            );
+        }
+        else if (size === "large") {
+            return (
+
+                <div style={textButtonStyleLarge}>
+                    <span>{text}</span>
+                </div>
+
+            );
+
+        }
+
     }
 
     return (

@@ -26,6 +26,40 @@ function ByEntry() {
 
             <Table>
             <TableBody>
+            <TableRow>
+                    <TableCell>large</TableCell>
+                    <TableCell>
+                        <TeamIcon color1='red' color2='blue' size='large' />
+                        <TeamIcon color1='pink' color2='black' size='large' />
+                    </TableCell>
+                    <TableCell>
+                        <TeamIcon color1='red' color2='blue' size='large' textMode={true} text="TXT" />
+                        <TeamIcon color1='pink' color2='black' size='large' textMode={true} text="PNK" />
+                        </TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell>medium</TableCell>
+                    <TableCell>
+                        <TeamIcon color1='red' color2='blue' size='medium' />
+                        <TeamIcon color1='pink' color2='black' size='medium' />
+                    </TableCell>
+                    <TableCell>
+                        <TeamIcon color1='red' color2='blue' size='medium' textMode={true} text="TXT" />
+                        <TeamIcon color1='pink' color2='black' size='medium' textMode={true} text="PNK" />
+                        </TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell>small</TableCell>
+                    <TableCell>
+                        <TeamIcon color1='red' color2='blue' size='small' />
+                        <TeamIcon color1='pink' color2='black' size='small' />
+                    </TableCell>
+                    <TableCell>
+                        <TeamIcon color1='red' color2='blue' size='small' textMode={true} text="TXT" />
+                        <TeamIcon color1='pink' color2='black' size='small' textMode={true} text="PNK" />
+                        </TableCell>
+                </TableRow>
+
                 {myEntries.map((entry) => {
                     return (
             <TableRow key={entry.id}>
