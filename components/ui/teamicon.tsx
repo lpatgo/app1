@@ -24,7 +24,7 @@ const TeamIcon: React.FC<TeamIconProps> = ({ color1, color2, textMode, text, siz
         padding: '0.0em',
         margin: '0.08em',
         color: 'white', // Tailwind's 'text-white'
-        fontSize: '.7rem' // Tailwind's 'font-2xl'
+        fontSize: '.7rem' 
     };
 
     const textButtonStyleMedium: React.CSSProperties = {
@@ -37,7 +37,7 @@ const TeamIcon: React.FC<TeamIconProps> = ({ color1, color2, textMode, text, siz
         padding: '0.0em',
         margin: '0.1em',
         color: 'white', // Tailwind's 'text-white'
-        fontSize: '.7rem' // Tailwind's 'font-2xl'
+        fontSize: '.7rem'
     };
 
     const textButtonStyleLarge: React.CSSProperties = {
@@ -49,7 +49,7 @@ const TeamIcon: React.FC<TeamIconProps> = ({ color1, color2, textMode, text, siz
         alignItems: 'center',
         padding: '0.5em',
         color: 'white', // Tailwind's 'text-white'
-        fontSize: '1.1rem' // Tailwind's 'font-2xl'
+        fontSize: '1.1rem'
     };
 
 
